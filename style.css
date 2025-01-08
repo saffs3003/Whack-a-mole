@@ -1,0 +1,48 @@
+
+body{
+  height: 100vh;
+    text-align: center;
+    background: url(assets/mario-bg.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+   
+}
+
+#board{
+    width:600px;
+    height:600px;
+    background:url(assets/soil.png);
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px solid white;
+    border-radius: 25px;
+    
+    
+}
+.cursor{
+    width:100px;
+    height:50px;
+     background:url(assets/hammer.svg);
+     background-repeat: no-repeat;
+     background-size: contain;
+   cursor: pointer;
+     position: absolute;
+     transform:rotate(20deg);
+
+}
+#board div{
+    width:200px;
+    height: 200px;
+    
+    background-image: url(assets/pipe.png);
+    background-size: cover;
+
+}
+#board img{
+    width:100px;
+    height:100px;
+}
+
+
+  
