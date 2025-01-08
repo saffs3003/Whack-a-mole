@@ -1,11 +1,19 @@
-let currentMoleTile;
-let currentPlantTile;
 
-let score=0;
-let gameOver=false;
-const startDialog=document.querySelector(".start");
+
+
+window.onload=function(){
+    
+    StartGame();
+         
+   
+ // document.addEventListener("mousemove",e=>{MouseMove(e)})
+ 
+ }
+
 
 function StartGame(){
+const startDialog=document.querySelector(".start");
+
     startDialog.showModal();
     const SubmitButton=document.querySelector(".close");
     SubmitButton.addEventListener("click",(e)=>{
@@ -24,18 +32,11 @@ function StartGame(){
 }
 
 
-window.onload=function(){
-    
-   StartGame();
-        
-  
-// document.addEventListener("mousemove",e=>{MouseMove(e)})
 
 
 
 
- 
-}
+
 
 function setBoard(){
     
@@ -52,6 +53,13 @@ function setBoard(){
    setInterval(SetPlant,2000)
 
 }
+function Game(){}
+
+let currentMoleTile;
+let currentPlantTile;
+
+let score=0;
+let gameOver=false;
 
 function RandomTile(){
     let num= Math.floor(Math.random() * 9)
